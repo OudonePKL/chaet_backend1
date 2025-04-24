@@ -42,7 +42,7 @@ if DEBUG == True:
     }
 
 else:
-    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "192.168.100.100"]
+    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "192.168.100.100", "ws://192.168.100.100"]
 
     # Database
     DATABASES = {
@@ -220,7 +220,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://192.168.100.100:8000",  
     "http://192.168.100.100:3000",  
-    "http://192.168.100.100",  
+    "http://192.168.100.100",
+    "ws://192.168.100.100"
 ]
 CSRF_TRUSTED_ORIGINS = ["http://localhost:3000", "http://localhost:5173"]
 
